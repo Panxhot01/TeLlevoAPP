@@ -1,13 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { AlertController, NavController } from '@ionic/angular';
 
-
 @Component({
-  selector: 'app-pasajero',
-  templateUrl: './pasajero.page.html',
-  styleUrls: ['./pasajero.page.scss'],
+  selector: 'app-conductor',
+  templateUrl: './conductor.page.html',
+  styleUrls: ['./conductor.page.scss'],
 })
-export class PasajeroPage implements OnInit {
+export class ConductorPage implements OnInit {
   alertSrv = inject(AlertController);
   navController = inject(NavController);
 
@@ -17,8 +16,8 @@ export class PasajeroPage implements OnInit {
   }
   async mostrarAlerta() {
     const alert = await this.alertSrv.create({
-      header: 'Viaje Solicitado',
-      message: 'Ya se ha solicitado el viaje.',
+      header: 'Viaje Creado',
+      message: 'Has creado un viaje.',
       buttons: [
         {
           text: 'ok'
@@ -31,7 +30,5 @@ export class PasajeroPage implements OnInit {
     await alert.present();
   }
   
-  async volver(){
-    this.navController.pop();
-  }
+
 }

@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <h3 class="titulo">Crear Viaje</h3>
+  <br>
+
+  <ion-list>
+    <ion-item>
+      <ion-input label="Nombre" label-placement="floating" fill="outline" placeholder="Nombre"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input label="Apellido" label-placement="floating" fill="outline" placeholder="Apellido"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input label="Comuna Destino" label-placement="floating" fill="outline" placeholder="Comuna Destino"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input label="Capacidad" label-placement="floating" fill="outline" placeholder="Capacidad"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input label="Hora Viaje" label-placement="floating" fill="outline" placeholder="Hora Viaje"></ion-input>
+    </ion-item>
+  </ion-list>  
+  <br>
+  <ion-button (click)="mostrarAlerta()" >Crear</ion-button>
+
+</ion-content>
