@@ -1,13 +1,14 @@
-<ion-header [translucent]="true">
+<ion-header >
   <ion-toolbar>
-    <ion-title>Inicio</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Te Llevo APP</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Inicio</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-text-center" [fullscreen]="true">
+
+  <ion-button size="default" class="boton-p" routerLink="/pasajero">Pasajero</ion-button>
+  
 </ion-content>

@@ -1,5 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <ion-title>TeLlevoAPP</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,7 +13,7 @@
   <br>
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Camilo Rodriguez</ion-card-title>
+      <ion-card-title>Krystel Rodriguez</ion-card-title>
       <ion-card-subtitle color="dark">Duoc UC</ion-card-subtitle>
     </ion-card-header>
   
@@ -18,7 +21,7 @@
       Capacidad: 3 personas <br>
       Lugar: Plaza de Maipu a 
     </ion-card-content>
-    <ion-button >Solicitar</ion-button>
+    <ion-button (click)="mostrarAlerta()" >Solicitar viaje</ion-button>
   </ion-card>
   <br>
   <ion-card>
@@ -31,7 +34,7 @@
       Capacidad: 4 personas <br>
       Lugar: Plaza de Maipu a 
     </ion-card-content>
-    <ion-button >Solicitar</ion-button>
+    <ion-button (click)="mostrarAlerta()"  >Solicitar viaje</ion-button>
   </ion-card>
   <br>
   <ion-card>
@@ -44,7 +47,7 @@
       Capacidad: 2 personas <br>
       Lugar: Plaza de Maipu a 
     </ion-card-content>
-    <ion-button>Solicitar</ion-button>
+    <ion-button (click)="mostrarAlerta()" >Solicitar viaje</ion-button>
   </ion-card>
   
 </ion-content>
