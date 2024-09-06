@@ -11,14 +11,17 @@
   <br>
   <h3 class="titulo">Inicio</h3>
   <br>
-  <ion-list>
+  
+  <ion-list lines="none">
     <ion-item>
-      <ion-button size="default" class="boton-p" routerLink="/conductor">Crear Viaje</ion-button>
+      <div class="centrado">
+        <ion-button size="default" class="boton-p" shape="round" routerLink="/conductor">Crear Viaje</ion-button>
+      </div>
     </ion-item>
       <br>
-    <ion-item>
-      <ion-button size="default" class="boton-p" routerLink="/pasajero">Viajes Disponibles</ion-button>
+    <ion-item class="centrado">
+      <ion-button size="default" class="boton-p" shape="round" routerLink="/pasajero">Viajes Disponibles</ion-button>
     </ion-item>
   </ion-list>
-  
+
 </ion-content>

@@ -30,10 +30,23 @@
     </ion-item>
     <br>
     <ion-item>
-      <ion-input label="Hora Viaje" label-placement="floating" fill="outline" placeholder="Hora Viaje"></ion-input>
+      <ion-datetime-button datetime="datetime"></ion-datetime-button>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime
+            id="datetime"
+            [formatOptions]="{
+              time: {
+                hour: '2-digit',
+                minute: '2-digit',
+              },
+            }"
+          ></ion-datetime>
+        </ng-template>
+      </ion-modal>
     </ion-item>
   </ion-list>  
   <br>
-  <ion-button (click)="mostrarAlerta()" >Crear</ion-button>
+  <ion-button (click)="mostrarAlerta()" shape="round" >Crear</ion-button>
 
 </ion-content>

@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'conductor',
     loadChildren: () => import('./conductor/conductor.module').then( m => m.ConductorPageModule)
   },
+  {
+    path: 'info-cond',
+    loadChildren: () => import('./info-cond/info-cond.module').then( m => m.InfoCondPageModule)
+  },
 
 ];
 
