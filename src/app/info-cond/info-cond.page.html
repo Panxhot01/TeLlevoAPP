@@ -1,18 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
     <ion-title>TeLlevoAPP</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true">
-  <p>nombre</p>
-  <p>Apellido</p>
-  <p>Destino</p>
-  <p>hora</p>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <p>Nombre:  </p>
+  <p>Apellido: </p>
+  <p>Destino: </p>
+  <p>Capacidad: </p>
+  <p>Hora: </p>
 
   <br>
   <div class="centrado">
     <ion-button shape="round" routerLink="/pasajero" >Cancelar</ion-button>
-    <ion-button shape="round" routerLink="/inicio" >Aceptar</ion-button>
+    <ion-button shape="round" routerLink="/inicio" (click)="mostrarAlerta()">Aceptar</ion-button>
   </div>
 
 </ion-content>

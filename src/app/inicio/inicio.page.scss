@@ -1,20 +1,33 @@
-/* mi-componente.page.scss */
-.borton-c  {
-    --padding-start: 16px;
-    --padding-end: 16px;
-    --border-radius: 8px;
-    font-size: 16px;
-  }
+.boton-p {
+  --padding-start: 20px; /* Ajusta el lado izquierdo */
+  --padding-end: 20px;   /* Ajusta el  lado derecho */
+  --padding-top: 20px;   /* Ajusta parte superior */
+  --padding-bottom: 20px; /* Ajusta parte inferior */
+  --border-radius: 20px; /* Ajusta el borde */
+  --font-size: 25px;     /* tamaño de la fuente */
+  
+  padding-left: 100px; 
+  
+}
 
-.borton-p {
-    --padding-start: 16px;
-    --padding-end: 16px;
-    --border-radius: 8px;
-    font-size: 20px;
- }
+.boton-c{
+  --padding-start: 47px; /* Ajusta el lado izquierdo */
+  --padding-end: 47px;   /* Ajusta el  lado derecho */
+  --padding-top: 20px;   /* Ajusta parte superior */
+  --padding-bottom: 20px; /* Ajusta parte inferior */
+  --border-radius: 20px; /* Ajusta el borde */
+  --font-size: 25px;     /* tamaño de la fuente */
+
+  padding-left: 100px; /*lado izquerdo*/
+}
+
+
+
   
  .titulo {
   text-align: center;
+  font-family: cursive;
+  
 }
 .centrado{
   text-align: center;

@@ -9,6 +9,7 @@ import { AlertController, NavController } from '@ionic/angular';
 export class ConductorPage implements OnInit {
   alertSrv = inject(AlertController);
   navController = inject(NavController);
+  
 
   constructor() { }
 
@@ -29,6 +30,8 @@ export class ConductorPage implements OnInit {
   this.navController.navigateRoot('inicio')
     await alert.present();
   }
+  
+
   
 
 }

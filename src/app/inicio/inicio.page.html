@@ -1,9 +1,11 @@
 <ion-header >
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+    <ion-title>TeLlevoAPP</ion-title>
+    <ion-buttons slot="end">
+      <ion-button ><!--(click)="cerrarSesion()"-->
+        Cerrar Sesión
+      </ion-button>
     </ion-buttons>
-    <ion-title>Te Llevo APP</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,9 +15,9 @@
   <br>
   
   <ion-list lines="none">
-    <ion-item>
-      <div class="centrado">
-        <ion-button size="default" class="boton-p" shape="round" routerLink="/conductor">Crear Viaje</ion-button>
+    <ion-item class="centrado">
+      <div >
+        <ion-button size="default" class="boton-c" shape="round" routerLink="/conductor">Crear Viaje</ion-button>
       </div>
     </ion-item>
       <br>
@@ -23,5 +25,6 @@
       <ion-button size="default" class="boton-p" shape="round" routerLink="/pasajero">Viajes Disponibles</ion-button>
     </ion-item>
   </ion-list>
+
 
 </ion-content>
