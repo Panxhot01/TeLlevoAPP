@@ -9,44 +9,19 @@
 
 <ion-content [fullscreen]="true">
   <br>
-  <h3 class="titulo">Crear Viaje</h3>
+  <h3 class="titulo" >Conductor</h3>
   <br>
 
-  <ion-list>
-    <ion-item>
-      <ion-input label="Nombre" label-placement="floating" fill="outline" placeholder="Nombre"></ion-input>
+  <ion-list lines="none">
+    <ion-item class="centrado">
+      <div >
+        <ion-button size="default" class="boton" shape="round" routerLink="/crear-viaje">Crear Viaje</ion-button>
+      </div>
     </ion-item>
-    <br>
-    <ion-item>
-      <ion-input label="Apellido" label-placement="floating" fill="outline" placeholder="Apellido"></ion-input>
+      <br>
+    <ion-item class="centrado">
+      <ion-button size="default" class="boton" shape="round" routerLink="/solicitud">Solicitudes</ion-button>
     </ion-item>
-    <br>
-    <ion-item>
-      <ion-input label="Comuna Destino" label-placement="floating" fill="outline" placeholder="Comuna Destino"></ion-input>
-    </ion-item>
-    <br>
-    <ion-item>
-      <ion-input label="Capacidad" label-placement="floating" fill="outline" placeholder="Capacidad"></ion-input>
-    </ion-item>
-    <br>
-    <ion-item>
-      <ion-datetime-button datetime="datetime"></ion-datetime-button>
-      <ion-modal [keepContentsMounted]="true">
-        <ng-template>
-          <ion-datetime
-            id="datetime"
-            [formatOptions]="{
-              time: {
-                hour: '2-digit',
-                minute: '2-digit',
-              },
-            }"
-          ></ion-datetime>
-        </ng-template>
-      </ion-modal>
-    </ion-item>
-  </ion-list>  
-  <br>
-  <ion-button (click)="mostrarAlerta()" shape="round" >Crear</ion-button>
+  </ion-list>
 
 </ion-content>

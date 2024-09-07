@@ -26,10 +26,21 @@ const routes: Routes = [
   {
     path: 'info-cond',
     loadChildren: () => import('./info-cond/info-cond.module').then( m => m.InfoCondPageModule)
-  },  {
+  },
+  {
     path: 'rest-cont',
     loadChildren: () => import('./rest-cont/rest-cont.module').then( m => m.RestContPageModule)
+  },  {
+    path: 'crear-viaje',
+    loadChildren: () => import('./crear-viaje/crear-viaje.module').then( m => m.CrearViajePageModule)
   },
+  {
+    path: 'solicitud',
+    loadChildren: () => import('./solicitud/solicitud.module').then( m => m.SolicitudPageModule)
+  },
+
+  
+  
 
   
 
