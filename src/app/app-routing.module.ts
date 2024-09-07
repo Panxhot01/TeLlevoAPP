@@ -26,7 +26,11 @@ const routes: Routes = [
   {
     path: 'info-cond',
     loadChildren: () => import('./info-cond/info-cond.module').then( m => m.InfoCondPageModule)
+  },  {
+    path: 'rest-cont',
+    loadChildren: () => import('./rest-cont/rest-cont.module').then( m => m.RestContPageModule)
   },
+
   
 
 ];
