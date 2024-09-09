@@ -14,5 +14,7 @@ export class PasajeroPage implements OnInit {
 
   ngOnInit() {
   }
+
+  
   
 }

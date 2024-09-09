@@ -30,7 +30,8 @@ const routes: Routes = [
   {
     path: 'rest-cont',
     loadChildren: () => import('./rest-cont/rest-cont.module').then( m => m.RestContPageModule)
-  },  {
+  },
+  {
     path: 'crear-viaje',
     loadChildren: () => import('./crear-viaje/crear-viaje.module').then( m => m.CrearViajePageModule)
   },
@@ -41,7 +42,11 @@ const routes: Routes = [
   {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },  {
+    path: 'infopasajero',
+    loadChildren: () => import('./infopasajero/infopasajero.module').then( m => m.InfopasajeroPageModule)
   },
+
 
   
   
