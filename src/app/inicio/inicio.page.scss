@@ -10,16 +10,11 @@
   
 }
 
-.boton-c{
-  --padding-start: 47px; /* Ajusta el lado izquierdo */
-  --padding-end: 47px;   /* Ajusta el  lado derecho */
-  --padding-top: 20px;   /* Ajusta parte superior */
-  --padding-bottom: 20px; /* Ajusta parte inferior */
-  --border-radius: 20px; /* Ajusta el borde */
-  --font-size: 25px;     /* tamaño de la fuente */
-
-  padding-left: 100px; /*lado izquerdo*/
+.centered-button {
+  display: block;
+  margin: 0 auto; /* Centra el botón horizontalmente */
 }
+
 
 
 

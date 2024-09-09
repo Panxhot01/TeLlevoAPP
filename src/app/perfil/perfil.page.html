@@ -7,27 +7,22 @@
     <ion-title>TeLlevoAPP</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content [fullscreen]="true" class="ion-padding">
+
+<ion-content [fullscreen]="true">
   <br>
-  <h3 style="text-align: center;">SOLICITUD</h3>
+  <h3 style="text-align: center;">PERFIL</h3>
   <br>
+  <div style="text-align: center;">
     <div style="display: flex; justify-content: center;">
       <ion-avatar>
         <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
-    </ion-avatar>
+      </ion-avatar>
+    </div>
+    <br>
+    <h3 class="titulo">Francisco Tralma</h3>
+    <p>RUT: 20.401.528-7</p>
+    <p>SEDE: MAIPÚ</p>
+    <P>HORARIO: VESPERTINO</P>
+    <P>COMUNA: MAIPÚ</P>
   </div>
-  <br>
-  <div class="centrado">
-  <p>NOMBRE: ALMA MARCELA</p>
-  <p>APELLIDO: DE ALEGRIA</p>
-  <p>DESTINO: MAIPÚ</p>
-  <p>CAPACIDAD: 4</p>
-  <p>HORA: 10:45</p>
-
-  <br>
-  
-    <ion-button shape="round" routerLink="/pasajero" >Cancelar</ion-button>
-    <ion-button shape="round" routerLink="/inicio" (click)="mostrarAlerta()">Aceptar</ion-button>
-  </div>
-
 </ion-content>

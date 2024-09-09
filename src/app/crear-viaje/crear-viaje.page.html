@@ -3,13 +3,14 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
+    <ion-icon name="car-sport-outline" style="font-size: 25px;" slot="start"></ion-icon>
     <ion-title>TeLlevoAPP</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <br>
-  <h3 class="ion-text-center">Crear Viaje</h3>
+  <h3 class="ion-text-center">CREAR VIAJE</h3>
   <br>
 
   <ion-list>
@@ -30,6 +31,10 @@
     </ion-item>
     <br>
     <ion-item>
+      <ion-input label="Precio" label-placement="floating" fill="outline" placeholder="$XXX.XXX"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
       <ion-datetime-button datetime="datetime"></ion-datetime-button>
       <ion-modal [keepContentsMounted]="true">
         <ng-template>
@@ -47,6 +52,7 @@
     </ion-item>
   </ion-list>  
   <br>
-  <ion-button (click)="mostrarAlerta()" shape="round" >Crear</ion-button>
-
+  <div class="centrado">
+  <ion-button (click)="mostrarAlerta()" size="default" shape="round">Crear</ion-button>
+</div>
 </ion-content>

@@ -3,24 +3,23 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
+    <ion-icon name="car-sport-outline" style="font-size: 25px;" slot="start"></ion-icon>
     <ion-title>TeLlevoAPP</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <br>
-  <h3 class="titulo" >Conductor</h3>
+  <h3 class="titulo" >CONDUCTOR</h3>
   <br>
 
   <ion-list lines="none">
-    <ion-item class="centrado">
-      <div >
-        <ion-button size="default" class="boton" shape="round" routerLink="/crear-viaje">Crear Viaje</ion-button>
-      </div>
+    <ion-item>
+      <ion-button class="centered-button" size="default" shape="round" routerLink="/crear-viaje">Crear Viaje</ion-button>
     </ion-item>
       <br>
-    <ion-item class="centrado">
-      <ion-button size="default" class="boton" shape="round" routerLink="/solicitud">Solicitudes</ion-button>
+    <ion-item>
+      <ion-button class="centered-button" size="default" shape="round" routerLink="/solicitud">Solicitudes</ion-button>
     </ion-item>
   </ion-list>
 

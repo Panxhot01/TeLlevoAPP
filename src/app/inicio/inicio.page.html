@@ -1,30 +1,30 @@
 <ion-header >
   <ion-toolbar>
+    <ion-icon name="car-sport-outline" style="font-size: 25px;" slot="start"></ion-icon>
     <ion-title>TeLlevoAPP</ion-title>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/home"><!--(click)="cerrarSesion()"-->
-        Cerrar Sesión
-      </ion-button>
-    </ion-buttons>
+    <ion-avatar slot="end" routerLink="/perfil">
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
+    </ion-avatar>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-text-center" [fullscreen]="true">
   <br>
-  <h3 class="titulo">Inicio</h3>
+  <h3 class="titulo">INICIO</h3>
   <br>
   
   <ion-list lines="none">
-    <ion-item class="centrado">
-      <div >
-        <ion-button size="default" class="boton-c" shape="round" routerLink="/conductor">Conductor</ion-button>
-      </div>
+    <ion-item>
+        <ion-button class="centered-button" size="default" shape="round" routerLink="/conductor">Conductor</ion-button>
     </ion-item>
       <br>
-    <ion-item class="centrado">
-      <ion-button size="default" class="boton-p" shape="round" routerLink="/pasajero">Pasajero</ion-button>
+    <ion-item>
+      <ion-button class="centered-button" size="default" shape="round" routerLink="/pasajero">Pasajero</ion-button>
     </ion-item>
   </ion-list>
-
+  <br>
+  <ion-button routerLink="/home" color="danger"><!--(click)="cerrarSesion()"-->
+  Cerrar Sesión
+  </ion-button>
 
 </ion-content>
