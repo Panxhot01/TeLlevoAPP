@@ -34,4 +34,16 @@
 
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
-@import "@ionic/angular/css/palettes/dark.system.css";
+/*@import "@ionic/angular/css/palettes/dark.system.css";*/
+
+ion-toolbar{
+    --background: rgba(10, 13, 44, 0.775);
+    --color: white; 
+    
+}
+
+
+
+ion-button{
+    --background: rgb(56, 72, 129);
+}

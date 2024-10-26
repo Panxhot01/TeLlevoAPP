@@ -26,17 +26,9 @@
   text-decoration: none;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Esto es opcional, depende de dónde quieras centrar el botón */
-}
 
-.botones {
-  padding: 10px 20px;
-  font-size: 12px;
-  text-align: center;
+.boton{
+  width: 160px;
 }
 
 .titulo {
