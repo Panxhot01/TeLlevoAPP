@@ -46,6 +46,10 @@ const routes: Routes = [
     path: 'infopasajero',
     loadChildren: () => import('./infopasajero/infopasajero.module').then( m => m.InfopasajeroPageModule)
   },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
 
 
   

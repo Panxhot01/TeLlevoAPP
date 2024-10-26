@@ -15,7 +15,6 @@
     <ion-list lines="none">
       <ion-item>
         <ion-input label="Usuario" type="email" placeholder="email@domain.com"></ion-input>
-        <div></div>
       </ion-item>
   
       <ion-item>
@@ -25,8 +24,10 @@
   </ion-list>
   <br>
   <div class="centrado">
-    <ion-button shape="round" routerLink="/inicio" >Iniciar Sesión</ion-button>
+    <ion-button shape="round" (click)="ingresar()" >Iniciar Sesión</ion-button>
    <br>
+   <ion-button shape="round" routerLink="/registro" >Registro</ion-button>
+    <br>
     <p  routerLink="/rest-cont">¿Olvidaste tu contraseña?</p>
   </div>
 </ion-content>

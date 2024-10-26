@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>registro</ion-title>
+    <ion-buttons>
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list lines="none">
+    <ion-item>
+      <ion-input [(ngModel)]="email" type="email" label="Email" placeholder="email@domain.com"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="password" type="password" label="Contraseña" placeholder="contraseña"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="password2" type="password" label="Confirmar contraseña" placeholder="contraseña2"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" (click)="registro()">Crear cuenta</ion-button>
+
+</ion-content>
