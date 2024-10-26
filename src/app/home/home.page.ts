@@ -24,7 +24,7 @@ export class HomePage {
   async ingresar(){
     try {
       await this.loginSrv.login(this.email,this.password);
-      this.nav.navigateRoot('/home');
+      this.nav.navigateRoot('/inicio');
     } catch (error:any) {
       const toast = await this.toastSrv.create({
         message:error.message,

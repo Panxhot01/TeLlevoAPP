@@ -14,11 +14,11 @@
   <ion-list>
     <ion-list lines="none">
       <ion-item>
-        <ion-input label="Usuario" type="email" placeholder="email@domain.com"></ion-input>
+        <ion-input [(ngModel)]="email" label="Usuario" type="email" placeholder="email@domain.com"></ion-input>
       </ion-item>
   
       <ion-item>
-        <ion-input label="Contraseña" type="password" placeholder="contraseña"></ion-input>
+        <ion-input [(ngModel)]="password" label="Contraseña" type="password" placeholder="contraseña"></ion-input>
       </ion-item>
     </ion-list>
   </ion-list>
