@@ -21,6 +21,7 @@ export class CrearViajePage implements OnInit {
   }
 
   async crearViaje() {
+    //datos de campos obligatorios
     if (!this.nombre || this.apellido ||this.comuna || this.capacidad <= 0 || this.precio <= 0)
       {
         const alert = await this.alertSrv.create({
