@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { LoginService } from '../services/login.service';
+import { NavController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-inicio',
@@ -7,12 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioPage implements OnInit {
   
+  loginSevice = inject(LoginService);
+  toastSrv= inject(ToastController);
+  nav = inject(NavController);
 
   constructor() { }
 
   ngOnInit() {
   }
-
   
 
 }

@@ -13,22 +13,25 @@
   <br>
   <h3 class="titulo ion-text-center" >SOLICITUDES</h3>
   <br>
-  <div class="flex-container ion-padding">
-    <img alt="img1" src="https://media.licdn.com/dms/image/C5603AQG_Ez_d6xnnDQ/profile-displayphoto-shrink_800_800/0/1641690544912?e=2147483647&v=beta&t=FnV4o07mwhbR0bNhLx0hqtFD2ikaj6mwsK3Bkp2bvmc">
-    <div class="text-content">
-      <h4>Alma Marcela de Alegría</h4>
-      <p>MAIPÚ</p>
-    </div>
-    
-    <ion-button class="ver" shape="round" routerLink="/infopasajero" >Ver</ion-button>
-  </div>
-<br>
-  <div class="flex-container ion-padding">
-    <img alt="img2" src="https://th.bing.com/th/id/OIP.GHiW5xwEgf46INlPLJKJ-gHaHa?rs=1&pid=ImgDetMain">
-    <div class="text-content">
-      <h4>Alonso Morales</h4>
-      <p>MAIPÚ</p>
-    </div>
-    <ion-button class="ver" shape="round" routerLink="/infopasajero" >Ver</ion-button>
+  
+  <div class="container">
+    <ion-card >
+      <ion-list>
+       <ion-item *ngFor="let solicitud of solicitudes"><!--cam-->
+         <!--info usuario que solicita-->
+         <ion-label>
+           <h2>{{solicitud.nombre}}</h2>
+         </ion-label>
+       
+   
+      <ion-button color="tertiary" (click)="aceptarSolicitud(solicitud)">Aceptar
+      </ion-button>
+      
+       <!--Borrar-->
+      <ion-button slot="end" color="danger" (click)="rechazarSolicitud(solicitud)">rechazar</ion-button>
+     
+     </ion-item>
+   </ion-list>
+     </ion-card>
   </div>
 </ion-content>
