@@ -26,7 +26,6 @@ export class SolicitudPage implements OnInit {
 
   async eliminarSolicitud(solicitud: any) {
     this.solicitudes = this.solicitudes.filter(s => s !== solicitud);
-  console.log(`Solicitud de ${solicitud.nombre} eliminada.`);
   }
 
   async aceptarSolicitud(solicitud:any){
