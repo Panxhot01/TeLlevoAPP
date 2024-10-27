@@ -23,6 +23,12 @@ export class SolicitudPage implements OnInit {
   ngOnInit() {
   }
 
+
+  async eliminarSolicitud(solicitud: any) {
+    this.solicitudes = this.solicitudes.filter(s => s !== solicitud);
+  console.log(`Solicitud de ${solicitud.nombre} eliminada.`);
+  }
+
   async aceptarSolicitud(solicitud:any){
     const alert = await this.alertSrv.create({
       header: 'Aceptada',
@@ -30,8 +36,8 @@ export class SolicitudPage implements OnInit {
       buttons: ['OK']
       
     });
-  this.navController.navigateRoot('conductor')
     await alert.present();
+    this.eliminarSolicitud(solicitud); 
   }
 
   async rechazarSolicitud(solicitud: any) {
@@ -42,6 +48,7 @@ export class SolicitudPage implements OnInit {
     });
 
     await alert.present();
+    this.eliminarSolicitud(solicitud); 
   }
 
 
