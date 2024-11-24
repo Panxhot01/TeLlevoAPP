@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "TeLlevoApp",
+=======
+  "name": "TeLlevoAPP",
+>>>>>>> d23a56fe0694267a1ac22e4928cbab3993523980
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -17,19 +21,30 @@
     "@angular/common": "^18.0.0",
     "@angular/compiler": "^18.0.0",
     "@angular/core": "^18.0.0",
+<<<<<<< HEAD
     "@angular/fire": "^18.0.1",
+=======
+>>>>>>> d23a56fe0694267a1ac22e4928cbab3993523980
     "@angular/forms": "^18.0.0",
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+<<<<<<< HEAD
     "@capacitor/app": "6.0.1",
     "@capacitor/camera": "^6.1.1",
+=======
+    "@capacitor-firebase/authentication": "^6.2.0",
+    "@capacitor/app": "6.0.1",
+>>>>>>> d23a56fe0694267a1ac22e4928cbab3993523980
     "@capacitor/core": "6.1.2",
     "@capacitor/haptics": "6.0.1",
     "@capacitor/keyboard": "6.0.2",
     "@capacitor/status-bar": "6.0.1",
     "@ionic/angular": "^8.0.0",
+<<<<<<< HEAD
     "@ionic/pwa-elements": "^3.3.0",
+=======
+>>>>>>> d23a56fe0694267a1ac22e4928cbab3993523980
     "firebase": "^10.14.1",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
@@ -43,7 +58,11 @@
     "@angular-eslint/eslint-plugin-template": "^18.0.0",
     "@angular-eslint/schematics": "^18.0.0",
     "@angular-eslint/template-parser": "^18.0.0",
+<<<<<<< HEAD
     "@angular/cli": "^18.0.0",
+=======
+    "@angular/cli": "18.2.3",
+>>>>>>> d23a56fe0694267a1ac22e4928cbab3993523980
     "@angular/compiler-cli": "^18.0.0",
     "@angular/language-service": "^18.0.0",
     "@capacitor/cli": "6.1.2",

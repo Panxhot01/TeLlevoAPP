@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <app-header backButton="/"  title="TeLlevoApp"></app-header>
 
 <ion-content [fullscreen]="true">
@@ -25,4 +26,42 @@
 
     </ion-item-sliding>
  </ion-list>
+=======
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-icon name="car-sport-outline" style="font-size: 25px;" slot="start"></ion-icon>
+    <ion-title>TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <br>
+  <h3 class="titulo ion-text-center" >SOLICITUDES</h3>
+  <br>
+  
+  <div class="container">
+    <ion-card >
+      <ion-list>
+       <ion-item *ngFor="let solicitud of solicitudes"><!--cam-->
+         <!--info usuario que solicita-->
+         <ion-label>
+           <h2>{{solicitud.nombre}}</h2>
+         </ion-label>
+       
+   
+      <ion-button color="tertiary" (click)="aceptarSolicitud(solicitud)">Aceptar
+      </ion-button>
+      
+       <!--Borrar-->
+      <ion-button slot="end" color="danger" (click)="rechazarSolicitud(solicitud)">rechazar</ion-button>
+     
+     </ion-item>
+   </ion-list>
+     </ion-card>
+  </div>
+>>>>>>> d23a56fe0694267a1ac22e4928cbab3993523980
 </ion-content>

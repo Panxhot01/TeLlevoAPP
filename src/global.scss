@@ -7,9 +7,14 @@
  * output CSS.
  * For more information on global stylesheets, visit the documentation:
  * https://ionicframework.com/docs/layout/global-stylesheets
+<<<<<<< HEAD
 
  */
 @import "@ionic/angular/css/palettes/dark.system.css";
+=======
+ */
+
+>>>>>>> d23a56fe0694267a1ac22e4928cbab3993523980
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
 
@@ -17,7 +22,11 @@
 @import "@ionic/angular/css/normalize.css";
 @import "@ionic/angular/css/structure.css";
 @import "@ionic/angular/css/typography.css";
+<<<<<<< HEAD
 @import '@ionic/angular/css/display.css';
+=======
+@import "@ionic/angular/css/display.css";
+>>>>>>> d23a56fe0694267a1ac22e4928cbab3993523980
 
 /* Optional CSS utils that can be commented out */
 @import "@ionic/angular/css/padding.css";
@@ -26,6 +35,7 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+<<<<<<< HEAD
 ion-button {
     text-transform: none;
 }
@@ -129,4 +139,27 @@ ion-button {
     .add-update-modal {
         --height: 680px;
     }
+=======
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+/*@import "@ionic/angular/css/palettes/dark.system.css";*/
+
+ion-toolbar{
+    --background: rgba(10, 13, 44, 0.775);
+    --color: white; 
+    
+}
+
+
+
+ion-button{
+    --background: rgb(56, 72, 129);
+>>>>>>> d23a56fe0694267a1ac22e4928cbab3993523980
 }

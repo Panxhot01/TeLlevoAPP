@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "TeLlevoApp",
+=======
+  "name": "TeLlevoAPP",
+>>>>>>> d23a56fe0694267a1ac22e4928cbab3993523980
   "integrations": {
     "capacitor": {}
   },

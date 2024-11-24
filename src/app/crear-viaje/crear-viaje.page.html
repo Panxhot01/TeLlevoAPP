@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-icon name="car-sport-outline" style="font-size: 25px;" slot="start"></ion-icon>
+    <ion-title>TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <h3 class="ion-text-center">CREAR VIAJE</h3>
+  <br>
+  <ion-card >
+    <ion-card-content >
+        <ion-item>
+          <ion-input  [(ngModel)]="nombre" type="text"  label="Nombre" label-placement="floating"
+           fill="outline" placeholder="Nombre"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-input [(ngModel)]="apellido" type="text"  label="Apellido" label-placement="floating" 
+          fill="outline" placeholder="Apellido"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-input [(ngModel)]="comuna" type="text"  label="Comuna Destino" label-placement="floating"
+           fill="outline" placeholder="Comuna Destino"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-input  [(ngModel)]="capacidad" type="number" label="Capacidad" label-placement="floating" 
+          fill="outline" placeholder="Capacidad"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-input  [(ngModel)]="precio" type="number" label="Precio" label-placement="floating" 
+          fill="outline" placeholder="$XXX.XXX"></ion-input>
+        </ion-item>
+        <br>
+        <ion-item>
+          <ion-datetime-button datetime="datetime"></ion-datetime-button>
+          <ion-modal [keepContentsMounted]="true">
+            <ng-template>
+              <ion-datetime
+                id="datetime"
+                [formatOptions]="{
+                  time: {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                  },
+                }"
+              ></ion-datetime>
+            </ng-template>
+          </ion-modal>
+        </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+  
+  
+  <br>
+  <div class="centrado">
+  <ion-button (click)="crearViaje()" size="default" shape="round">Crear</ion-button>
+</div>
+</ion-content>

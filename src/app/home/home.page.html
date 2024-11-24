@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <app-header title="TeLlevoAPP" ></app-header>
 
 
@@ -30,4 +31,38 @@
 
  
 
+=======
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon name="car-sport-outline" style="font-size: 25px;" slot="start"></ion-icon>
+    <ion-title>
+      TeLlevoAPP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <h3 class="titulo">INICIO SESIÓN</h3>
+  <br>
+  <ion-list>
+    <ion-list lines="none">
+      <ion-item>
+        <ion-input [(ngModel)]="email" label="Usuario" type="email" placeholder="email@domain.com"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-input [(ngModel)]="password" label="Contraseña" type="password" placeholder="contraseña"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-list>
+  <br>
+  <div class="centrado">
+    <ion-button shape="round" (click)="ingresar()" >Iniciar Sesión</ion-button>
+   <br>
+   <ion-button shape="round" class="boton" routerLink="/registro" >Registro</ion-button>
+    <br>
+    <p  routerLink="/rest-cont">¿Olvidaste tu contraseña?</p>
+  </div>
+>>>>>>> d23a56fe0694267a1ac22e4928cbab3993523980
 </ion-content>

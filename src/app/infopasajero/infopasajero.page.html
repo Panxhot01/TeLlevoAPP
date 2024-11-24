@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-icon name="car-sport-outline" style="font-size: 25px;" slot="start"></ion-icon>
+    <ion-title>TeLlevoAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <h3 style="text-align: center;">SOLICITUDES</h3>
+  <br>
+    <div style="display: flex; justify-content: center;">
+      <ion-avatar>
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
+    </ion-avatar>
+  </div>
+  <br>
+  <div class="ion-text-center">
+  <p>NOMBRE: ALMA MARCELA</p>
+  <p>APELLIDO: DE ALEGRIA</p>
+  <p>DESTINO: MAIPÚ</p>
+
+  <p>HORA: 10:45</p>
+
+  <br>
+  
+    <ion-button shape="round" routerLink="/pasajero" >Cancelar</ion-button>
+    <ion-button shape="round" routerLink="/inicio" (click)="mostrarAlerta()">Aceptar</ion-button>
+  </div>
+</ion-content>
