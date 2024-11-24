@@ -1,0 +1,18 @@
+<app-header backButton="/"  title="TeLlevoApp"></app-header>
+
+<ion-content [fullscreen]="true">
+
+   <app-logo></app-logo>
+    <p class="ion-text-center" >Selecciona una opción</p>
+<br>
+  <ion-button  expand="block" (click)="addUpdate()" shape="round" routerLinkActive="router-link-active"  mode="ios" fill="outline"  >
+    Crear Viaje
+    <ion-icon slot="end" ></ion-icon>
+   </ion-button>
+   <br>
+   <ion-button  expand="block" [routerLink]="['/solicitud']" shape="round" routerLinkActive="router-link-active"  mode="ios" fill="outline">
+    Solicitudes
+    <ion-icon slot="end" ></ion-icon>
+   </ion-button>
+</ion-content>
+

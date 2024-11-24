@@ -1,0 +1,92 @@
+<app-header backButton="/"  title="TeLlevoApp"></app-header>
+
+<ion-content [fullscreen]="true">
+
+
+ <!-- NOMBRE -->
+
+    <br>
+    <h1 style=" font-weight: bold; text-align: center;">
+      Crea tu viaje</h1>
+    <p class="ion-text-center">Completa los datos</p>
+
+    <form [formGroup]="form" class="ion-padding ion-text-center" (ngSubmit)="submit()" (keypress.enter)="submit()">
+
+      <app-custom-input
+      autocomplete="name"
+      [control]="form.controls.name"
+      type="text"
+      label="Nombre Completo"
+      ></app-custom-input>
+  
+     <div class="validators" *ngIf="form.controls.name.errors && form.controls.name.touched">
+      <div *ngIf="form.controls.name.errors?.['required']">Este Campo es requerido</div>
+      <div *ngIf="form.controls.name.errors?.['minlenght']">El nombre debe tener al menos 8 caracteres</div>
+     </div>
+
+     <!--Comuna-->
+     <app-custom-input
+     [control]="form.controls.destino"
+     type="text"
+     label="Destino"
+     ></app-custom-input>
+ 
+    <div class="validators" *ngIf="form.controls.destino.errors && form.controls.destino.touched">
+     <div *ngIf="form.controls.destino.errors?.['required']">Este Campo es requerido</div>
+     <div *ngIf="form.controls.destino.errors?.['minlenght']">El destino debe tener al menos 4 caracteres</div>
+    </div>
+
+    <!--  Capacidad   -->
+
+     <app-custom-input
+     [control]="form.controls.capacidad"
+     type="number"
+     label="Capacidad"
+     ></app-custom-input>
+ 
+    <div class="validators" *ngIf="form.controls.price.errors && form.controls.capacidad.touched">
+     <div *ngIf="form.controls.capacidad.errors?.['required']">Este campo es requerido</div>
+     <div *ngIf="form.controls.capacidad.errors?.['min']">El capacidad minima debe ser 0</div>
+    </div>
+ 
+     <!-- price  -->
+     <app-custom-input
+      [control]="form.controls.price"
+      type="number"
+      label="Precio"
+      ></app-custom-input>
+  
+     <div class="validators" *ngIf="form.controls.price.errors && form.controls.price.touched">
+      <div *ngIf="form.controls.price.errors?.['required']">Este campo es requerido</div>
+      <div *ngIf="form.controls.price.errors?.['min']">Este campo es requerido</div>
+     </div>
+
+     <ion-item>
+      <ion-datetime-button datetime="datetime"></ion-datetime-button>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime
+            id="datetime"
+            [formatOptions]="{
+              time: {
+                hour: '2-digit',
+                minute: '2-digit',
+              },
+            }"
+          ></ion-datetime>
+        </ng-template>
+      </ion-modal>
+    </ion-item>
+  
+     
+       
+
+      <ion-button   mode="ios" class="ion-margin" type="submit">
+        Crear Viaje
+        <ion-icon slot="end" name="checkmark-circle-outline"></ion-icon>
+      </ion-button>
+
+    </form>
+  
+
+</ion-content>
